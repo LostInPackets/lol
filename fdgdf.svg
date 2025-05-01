@@ -1,12 +1,2 @@
 <!-- SVG with onload alert -->
 <svg onload="alert('XSS')" xmlns="http://www.w3.org/2000/svg"></svg>
-
-<!-- SVG with script tag -->
-<svg xmlns="http://www.w3.org/2000/svg">
-  <script>alert(document.location)</script>
-</svg>
-
-<!-- SVG with href JS -->
-<svg xmlns="http://www.w3.org/2000/svg">
-  <a href="javascript:alert('XSS')">Click</a>
-</svg>

